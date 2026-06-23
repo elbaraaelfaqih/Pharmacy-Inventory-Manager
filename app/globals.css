@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+@media print {
+  /* Hide every single element on the page */
+  body * {
+    visibility: hidden !important;
+    height: 0 !important;
+    overflow: hidden !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  
+  /* Make only elements with class 'printable-area' and their children visible */
+  .printable-area, 
+  .printable-area * {
+    visibility: visible !important;
+    height: auto !important;
+    overflow: visible !important;
+  }
+  
+  /* Reset positioning and size for the printable area to cover the full physical print page */
+  .printable-area {
+    position: absolute !important;
+    left: 0 !important;
+    top: 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    background: white !important;
+    color: black !important;
+    display: block !important;
+    padding: 30px !important;
+    margin: 0 !important;
+    box-sizing: border-box !important;
+  }
+}

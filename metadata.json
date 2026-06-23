@@ -1,0 +1,6 @@
+{
+  "name": "Pharmacy Inventory Manager",
+  "description": "لوحة تحكم ذكية وصديقة للمستخدم لإدارة مخزون الصيدلية، تتبع كميات الأدوية، توفير الأدوية البديلة، وتصدير التقارير اليومية إلى Google Sheets.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
